@@ -1,0 +1,113 @@
+header, h2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 4em;
+	color: #fff;
+	text-align: center;
+}
+
+body {
+	background-color: #b5dce1;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+#wins, #losses, #guessed, #attempts {
+	font-size: 18px;
+
+}
+
+.scoreboard {
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	line-height: 1.5em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#currentWord {
+	font-size: 3em;
+	margin-top: 10%;
+
+}
+
+#categoryName {
+	font-size: 4em;
+	margin-top: 15%;
+}
+
+.let-btn {
+  
+  color: #b5dce1;
+  border-radius: 25px;
+  background-color: white;
+  border: solid 1px white;
+  font-size:1.2em;
+  padding:18px 10px;
+  max-width:180px;
+  margin: 10px;
+  outline: none;
+  text-decoration: none;
+  font-family: sans-serif;
+
+  }
+
+  #buttons {
+  	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
+  	align-content: center;
+
+  }
+
+  #alphabet {
+  @include clear;
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  background:$white;
+  color:$base-color;
+  cursor:pointer;
+  @include corners(5px);
+  border: solid 1px $white;
+    
+    &:hover{
+      background:$base-color;
+      border: solid 1px $white;
+      color:$white;
+    }
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+#attempts {
+  font-size:1.6em;
+  text-align:center;
+  display:block;
+}
